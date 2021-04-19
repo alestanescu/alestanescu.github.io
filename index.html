@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Ale's CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Stănescu Alexandra</h1>
+        <img src="Me.jpg" alt="Portrait" height="90">
+        <h2>studentă</h2>
+
+        <p id="motto">
+            Despre mine: UBB, secția de japoneză- engleză
+        </p>
+
+        <ul id="top-menu-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="showLanguagesPage();">Languages</a></li>
+            <li><a href="#" onclick="showSkillsPage();">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </header>
+    <section id="content">
+        <div id="side-menu">
+            <section>
+                <form action="">
+                    <div>
+                        <label for="nume">Your Name</label>
+                        <input type="text" name="nume" id="nume">
+                    </div>
+                    <div>
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="mail" id="email" required>
+                    </div>
+                    <button>Send Request</button>
+                </form>
+            </section>
+            <section>Menu2</section>
+        </div>
+        <div id="Main">
+            <div id="home" class="page">
+                <h2>Home</h2>
+                <p>Blabidy bla bla....</p>
+
+            </div>
+
+            <div id="skills" class="page" style="display: none;">
+                <h2>Skills</h2>
+                <ul>
+                    <li class="favorite-skill">HTML
+                    </li>
+                    <li class="favorite-skill2">CSS
+                    </li>
+                    <li class="favorite-skill">JS
+                    </li>
+                </ul>
+            </div>
+
+            <div id="languages" class="page" style="display: none;">
+                <h2>Languages</h2>
+                <table border="1">
+                    <tr>
+                        <th>Language</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Romania</td>
+                        <td>Native</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Proficiency</td>
+                    </tr>
+                    <tr>
+                        <td>Japanese</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <a href="https://www.facebook.com/ale.stanescu21" target="_blank">facebook</a>
+    </footer>
+
+    <script>
+        console.log("Hullo there!");
+        console.info(4+3);
+    </script>
+
+    <script src="functions.js"></script>
+</body>
+
+</html>
