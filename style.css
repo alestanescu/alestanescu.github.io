@@ -1,50 +1,43 @@
+html {
+    height: 100%;
+}
+ 
+body {
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
-/* header,
-        footer {
-            padding: 4px;
-            margin: 2px;
-            border: 1px solid blue;
-        }
+header {
+    flex: 1;
+}
 
-        #content div,
-        #side-menu section {
-            padding: 4px;
-            margin: 2px;
-            border: 1px solid red;
-        }
+#content {
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+}
 
-        #side-menu section {
-            border: 1px solid green;
-        } */
+#side-menu {
+    flex: 1;
+}
 
-        html {
-            height: 100%;
-        }
+#main {
+    flex: 3;
+}
 
-        body {
-            margin: 0;
-            min-height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
+footer {
+    text-align: center;
+    background-color: rgb(12, 19, 37);
+    padding: 8px;
+    color: #706f6c;
+}
 
-        header {
-            flex: 1;
-        }
-
-        #content {
-            flex: 5;
-            display: flex;
-            flex-direction: row;
-        }
-
-        #side-menu {
-            flex: 1;
-        }
-
-        #main {
-            flex: 3;
-        }
+footer a {
+    color: #706f6c;
+    text-decoration: none;
+}
 
 #motto {
     text-align: right; 
