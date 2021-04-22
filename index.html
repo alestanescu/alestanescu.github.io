@@ -8,19 +8,24 @@
 <body>
 
     <header>
-        <h1>Stănescu Alexandra</h1>
-        <img src="Me.jpg" alt="Portrait" height="90">
-        <h2>studentă</h2>
-
-        <p id="motto">
-            Despre mine: UBB, secția de japoneză- engleză
-        </p>
-
+        <div id="header-wrapper">
+            <div id="my-picture">
+                <img src="Me.jpg" alt="Portrait" height="90">
+            </div>
+            <div id="header-info">
+                <h1>Stănescu Alexandra</h1>
+                <h2 id="job-title">UBB's Faculty of Letters student</h2>                 
+            </div>
+        </div>
+        
+        
+        
+    
         <ul id="top-menu-bar">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" onclick="showHomePage()">Home</a></li>
             <li><a href="#" onclick="showLanguagesPage();">Languages</a></li>
             <li><a href="#" onclick="showSkillsPage();">Skills</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#" onclick="showProjectsPage()">Projects</a></li>
         </ul>
     </header>
     <section id="content">
@@ -43,7 +48,7 @@
         <div id="Main">
             <div id="home" class="page">
                 <h2>Home</h2>
-                <p>Blabidy bla bla....</p>
+                <p>Japanese major, English minor</p>
 
             </div>
 
@@ -67,7 +72,7 @@
                         <th>Level</th>
                     </tr>
                     <tr>
-                        <td>Romania</td>
+                        <td>Romanian</td>
                         <td>Native</td>
                     </tr>
                     <tr>
@@ -79,6 +84,11 @@
                         <td>Intermediate</td>
                     </tr>
                 </table>
+            </div>
+            <div id="projects" class="page" style="display: none;">
+                <h2>Projects</h2>
+                <p>Coming soon</p>
+
             </div>
         </div>
     </section>
