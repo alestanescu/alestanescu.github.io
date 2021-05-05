@@ -33,3 +33,18 @@ function listenMenuClicks() {
 }
 
 listenMenuClicks();
+
+showPage("skills");
+
+var allSkills = [
+    { name: "HTML", favorite: true, endorsements: 5 },
+    { name: "CSS", favorite: true, endorsements: 4 },
+    { name:"JS", favorite: true, endorsements: 6}
+];
+
+var allSkillsHtml = allSkills.map(function(skill){
+    return `<li>${skill.name} <span>(${skill.endorsements})</span></li>`;
+});
+
+var skillsEl = document.querySelector("#skills ul");
+skillsEl.innerHTML = allSkillsHtml.join("");

@@ -78,7 +78,7 @@ footer a {
     color: blueviolet;
 }
 
-.favorite-skill {
+.favorite {
     margin: 5px; 
     padding: 5px; 
     color: brown; 
@@ -86,12 +86,8 @@ footer a {
     font-weight: bold;
 }
 
-.favorite-skill2 {
-    margin: 5px; 
-    padding: 5px; 
-    color: cornflowerblue; 
-    background-color: brown; 
-    font-weight: bold;
+#skills li span {
+    color: #706f6c;
 }
 
 td {
