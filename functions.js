@@ -7,12 +7,13 @@ function show(id) {
 }
 
 function hideAllPages() {
-    var pages = document.querySelectorAll(".page");
+    var pages = Array.from(document.querySelectorAll(".page"));
+    var pagesIds = pages.map(function(page){
+        return page.id;
+    });
     
-    for(var i = 0; i < pages.length; i++) {
-       var page = pages[i];
-       hide(page.id);
-       // hide(pages[i].id);
+    for(var i = 0; i < pagesIds.length; i++) {
+        hide(pageIds[i]);
     }
 }
 
